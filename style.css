@@ -1,0 +1,46 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.head-container {
+  width: 80%;
+  height: 100px;
+  background-color: brown;
+  float: right;
+}
+
+.head-container::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.aside-container {
+  width: 20%;
+  height: calc(100vh - 100px);
+  background-color: grey;
+  float: left;
+}
+
+.aside-container::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.main-container {
+  background-color: indigo;
+  width: 80%;
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+.foot-container {
+  background-color: khaki;
+  height: 100px;
+  width: 100%;
+}
