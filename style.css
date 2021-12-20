@@ -15,6 +15,10 @@
   height: calc(100vh - 100px);
   float: left;
   background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
 }
 
 .side-container::after {
@@ -32,6 +36,37 @@
   padding-left: 10px;
   width: 70%;
   height: 100%;
+}
+
+.side-menu {
+  padding-left: 10px;
+  padding-top: 2px;
+}
+
+/* Menu TOP sidebar */
+
+.side-top ul {
+  list-style: none;
+}
+
+.side-top li {
+  padding-top: 6px;
+  font-size: 0.85em;
+}
+
+.side-top ul img {
+  width: 22px;
+  margin-right: 5px;
+}
+
+.side-top ul li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.side-top .name-menu {
+  padding-top: 4px;
 }
 
 .side-bottom {
@@ -86,6 +121,7 @@
   background-color: #141922;
   height: calc(100vh - 100px);
   overflow-y: auto;
+  padding-left: 200px;
 }
 
 /* RIGA BUTTON UPGRADE */
