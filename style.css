@@ -24,7 +24,7 @@
 }
 
 .main-container {
-  background-color: indigo;
+  background-color: #141922;
   height: calc(100vh - 100px);
   overflow-y: auto;
 }
@@ -68,12 +68,12 @@
 
 .main-content {
   padding-top: 80px;
+  padding-bottom: 50px;
 }
 
 /* MENU MAIN */
 
 .nav-main {
-  background-color: brown;
   text-transform: uppercase;
   justify-content: center;
 }
@@ -88,28 +88,42 @@
 
 .nav-main ul li {
   margin: 0 15px;
-  padding-top: 15px;
+  padding-top: 20px;
   padding-bottom: 15px;
 }
 
 .nav-main ul a {
   text-decoration: none;
-  color: white;
+  color: #797979;
 }
+
+/* RIGHE BRANI */
 
 .item-played {
   justify-content: center;
 }
 
+/* TITOLO RIGA */
+
 .title-play {
   color: #fff;
   margin-top: 25px;
   margin-bottom: 25px;
-  margin-left: 10px;
+  padding-left: 20px;
 }
+
+.title-play .title-sub {
+  font-size: 0.8em;
+  margin-top: 10px;
+  color: #7A7C81;
+  font-weight: 600;
+}
+
+/* BRANI RIGA */
 
 .item-row {
   flex-wrap: wrap;
+  padding-left: 20px;
 }
 
 .item-row .item {
@@ -119,13 +133,21 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .item-row .item img {
   max-width: 100%;
 }
+
+/* BORDER RADIUS applicato alle
+  due img della terza riga */
+
+.border-rad {
+  border-radius: 50%;
+}
+
+/* NOME Brani */
 
 .item .item-name {
   margin-top: 10px;
@@ -138,6 +160,7 @@
 .item-sub {
   font-size: 0.7em;
   font-weight: 600;
+  color: #7A7C81;
 }
 
 /* FOOTER */
