@@ -307,7 +307,7 @@
 }
 
 .item-row .item {
-  min-width: 150px;
+  min-width: 100px;
   max-width: calc(100% / 6 - 13px);
   text-align: center;
   flex-direction: column;
@@ -491,6 +491,8 @@
   border-radius: 50px;
 }
 
+
+
 /* MEDIA QUERIES */
 
 /* X-SMALL */
@@ -526,6 +528,10 @@
   .main-container {
     padding-left: 50px;
     display: flex;
+  }
+
+  .center {
+    width: 90%;
   }
 
   /* SEZIONE BUTTON UPGRADE */
