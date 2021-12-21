@@ -27,6 +27,39 @@
   clear: both;
 }
 
+/* MENU SIDE XS con Display None*/
+
+.menu-side-xs {
+  display: none;
+  width: 50px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-top-xs, .menu-bottom-xs {
+  width: 50px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-side-xs .menu-top-xs img {
+  width: 60%;
+  margin-top: 10px
+}
+
+.menu-side-xs .menu-bottom-xs img {
+  width: 40%;
+}
+
+.menu-bottom-xs .user-xs {
+  background-color: #797979;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* FINE MENU SIDE xs */
+
 .logo {
   height: 80px;
   background-color: #000;
@@ -197,7 +230,7 @@
   height: 80px;
   justify-content: flex-end;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .btn-upgrade a {
@@ -327,7 +360,6 @@
   min-width: 25%;
   height: 100%;
   align-items: center;
-  flex-shrink: 0;
 }
 
 .foot-container .img-player {
@@ -438,7 +470,7 @@
 }
 
 .foot-right .icon-right .fas {
-  margin-right: 12px;
+  margin-left: 12px;
   color: #fff;
 }
 
@@ -448,6 +480,7 @@
   background-color: #5A5A5A;
   border-radius: 50px;
   margin-right: 10px;
+  margin-left: 12px;
 }
 
 .progress-bar-right .white-progress-r {
@@ -457,3 +490,73 @@
   border-radius: 50px;
 }
 
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 576px) {
+  
+  .menu-side-xs {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  /* SIDEBAR */
+  .side-container {
+    width: 50px;
+  }
+
+  .side-container .logo {
+    display: none;
+  }
+
+  .side-top, .side-center {
+    display: none;
+  }
+
+  .side-bottom .installer, .user {
+    display: none;
+  }
+  .side-bottom {
+    width: 50px;
+  }
+
+  /* MAIN */
+  .main-container {
+    padding-left: 50px;
+    display: flex;
+  }
+
+  /* SEZIONE BUTTON UPGRADE */
+  .head-container {
+    width: calc(100% - 50px);
+  }
+
+  /* SEZIONE CENTRALE BRANI */
+  .item-row {
+  padding-left: 10px;
+  }
+
+  .item-row .item {
+  min-width: 150px;
+  max-width: calc(100% / 2 - 10px);
+  margin-right: 10px;
+  }
+
+  /* SIDEBAR */
+
+  .side-center {
+    background-color: aqua;
+  }
+
+  .icon-music .fa-heart {
+    padding-bottom: 8px;
+  }
+
+  .foot-right .icon-right .fas {
+    margin-left: 4px;
+  }
+  .foot-right .progress-bar-right {
+    margin-left: 4px;
+  }
+
+}
