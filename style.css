@@ -281,13 +281,15 @@
   justify-content: center;
 }
 
+.center {
+  width: 95%;
+}
 /* TITOLO RIGA */
 
 .title-play {
   color: #fff;
   margin-top: 25px;
   margin-bottom: 25px;
-  padding-left: 20px;
 }
 
 .title-play .title-sub {
@@ -301,17 +303,16 @@
 
 .item-row {
   flex-wrap: wrap;
-  padding-left: 20px;
+  gap: 15px;
 }
 
 .item-row .item {
   min-width: 150px;
-  max-width: calc(100% / 6 - 20px);
+  max-width: calc(100% / 6 - 13px);
   text-align: center;
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
-  margin-right: 20px;
 }
 
 .item-row .item img {
@@ -492,6 +493,7 @@
 
 /* MEDIA QUERIES */
 
+/* X-SMALL */
 @media screen and (max-width: 575px) {
   
   .menu-side-xs {
@@ -532,21 +534,12 @@
   }
 
   /* SEZIONE CENTRALE BRANI */
-  .item-row {
-  padding-left: 10px;
-  }
-
+ 
   .item-row .item {
-  min-width: 150px;
-  max-width: calc(100% / 2 - 10px);
-  margin-right: 10px;
+    max-width: calc(100% / 2 - 8px);
   }
 
   /* SIDEBAR */
-
-  .side-center {
-    background-color: aqua;
-  }
 
   .icon-music .fa-heart {
     padding-bottom: 8px;
@@ -561,17 +554,46 @@
 
 }
 
-@media screen and (max-width: 767px) {
+/* SMALL */
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
  
   .item-row .item {
-  max-width: calc(100% / 2 - 8px);
-  margin-right: 0;
+    max-width: calc(100% / 2 - 8px);
   }
 
   .center {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .item-row {
+    width: 100%;
+    gap: 15px;
+  }
+
+  .title-play {
+    width: 100%;
+  }
+
+  .icon-music .fa-heart {
+    padding-bottom: 8px;
+  }
+
+}
+
+/* MEDIUM */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+ 
+  .center {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item-row .item {
+  max-width: calc(100% / 4 - 12px);
   }
 
   .item-row {
@@ -583,10 +605,6 @@
   .title-play {
     padding-left: 0px;
     width: 90%;
-  }
-
-  .icon-music .fa-heart {
-    padding-bottom: 8px;
   }
 
 }
