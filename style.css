@@ -370,7 +370,7 @@
 }
 
 .foot-container .img-player img {
-  width: 100%;
+  width: 50px;
 }
 
 .music-name {
@@ -492,7 +492,7 @@
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
   
   .menu-side-xs {
     display: flex;
@@ -557,6 +557,36 @@
   }
   .foot-right .progress-bar-right {
     margin-left: 4px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+ 
+  .item-row .item {
+  max-width: calc(100% / 2 - 8px);
+  margin-right: 0;
+  }
+
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item-row {
+    padding-left: 0;
+    width: 90%;
+    gap: 15px;
+  }
+
+  .title-play {
+    padding-left: 0px;
+    width: 90%;
+  }
+
+  .icon-music .fa-heart {
+    padding-bottom: 8px;
   }
 
 }
