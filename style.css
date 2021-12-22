@@ -252,27 +252,40 @@
 /* MENU MAIN */
 
 .nav-main {
-  text-transform: uppercase;
-  justify-content: center;
+  text-align: center;
 }
 
 .nav-main ul {
   list-style: none;
-  align-items: center;
+  text-transform: uppercase;
   font-size: 0.8em;
   font-weight: 600;
-  flex-wrap: wrap;
 }
 
 .nav-main ul li {
+  display: inline-block;
   margin: 0 15px;
   padding-top: 20px;
   padding-bottom: 15px;
+  position: relative;
 }
 
-.nav-main ul a {
+.nav-main ul li a {
   text-decoration: none;
   color: #797979;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.nav-main ul li a.border-g::after {
+  content: "";
+  width: 45px;
+  height: 2px;
+  background-color: green;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* RIGHE BRANI */
@@ -358,10 +371,12 @@
 /* FOOTER sezione SINISTRA */
 
 .foot-container .foot-left {
-  min-width: 25%;
+  width: 250px;
   height: 100%;
   align-items: center;
 }
+
+/* img */
 
 .foot-container .img-player {
   height: 50px;
@@ -373,6 +388,8 @@
 .foot-container .img-player img {
   width: 50px;
 }
+
+/* nome brano */
 
 .music-name {
   flex-direction: column;
@@ -390,6 +407,8 @@
   font-weight: 600;
 }
 
+/* icone */
+
 .icon-music {
   color: #fff;
 }
@@ -401,7 +420,7 @@
 /* FOOTER sezione CENTRALE */
 
 .foot-container .foot-center {
-  min-width: 50%;
+  width: 40%;
   height: 100%;
   align-items: center;
   justify-content: center;
@@ -462,12 +481,11 @@
 /* FOOTER Sezione DESTRA */
 
 .foot-right {
-  min-width: 25%;
+  width: 250px;
   height: 100%;
   justify-content: flex-end;
   align-items: center;
   font-size: 0.9em;
-  flex-shrink: 0;
 }
 
 .foot-right .icon-right .fas {
