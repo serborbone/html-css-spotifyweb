@@ -100,6 +100,10 @@
   color: #797979;
 }
 
+.side-top ul li a:hover {
+  color: #fff;
+}
+
 .side-top .name-menu {
   padding-top: 4px;
 }
@@ -116,15 +120,23 @@
   color: #fff;
 }
 
+/* color white con HOVER*/
+
+.side-center ul li a:hover {
+  color: #fff;
+}
+
+
 /* Link CREA PLAYLIST */
 
-.side-center .add-play  a{
+.side-center .add-play a{
   display: flex;
   margin-top: 10px;
   align-items: center;
   text-decoration: none;
   color: #000;
 }
+
 
 .add-play .add-btn {
   background-color: #797979;
@@ -140,6 +152,12 @@
 .add-name-btn {
   font-size: 0.85em;
   color: #797979;
+}
+
+/* color white con HOVER*/
+
+.side-center .add-play a:hover > span {
+  color: #fff;
 }
 
 /* Sezione con link Nome Playlist*/
@@ -207,6 +225,11 @@
   margin-right: 6px;
 }
 
+.side-bottom .installer:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
 /* CONTAINER MAIN */
 
 .main-container {
@@ -244,6 +267,12 @@
   font-size: 0.8em;
 }
 
+/* SCALE con Hover */
+
+.btn-upgrade a:hover {
+  transform: scale(1.2);
+}
+
 .main-content {
   padding-top: 80px;
   padding-bottom: 50px;
@@ -275,6 +304,10 @@
   color: #797979;
   position: relative;
   padding-bottom: 5px;
+}
+
+.nav-main ul li a:hover {
+  color: #fff;
 }
 
 .nav-main ul li a.border-g::after {
@@ -407,14 +440,34 @@
   font-weight: 600;
 }
 
+/* color white con HOVER */
+
+.music-name .name-mus:hover {
+  text-decoration: underline;
+  color: #fff;
+  cursor: pointer;
+}
+
 /* icone */
 
 .icon-music {
-  color: #fff;
+  color: #7A7C81;
 }
 
 .icon-music .fa-heart {
   margin-right: 10px;
+}
+
+/* color white con HOVER */
+
+.icon-music .fa-heart:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.icon-music .fa-folder:hover {
+  color: #fff;
+  cursor: pointer;
 }
 
 /* FOOTER sezione CENTRALE */
@@ -438,6 +491,7 @@
   margin-right: 8px;
   font-size: 1.2em;
   color: #fff;
+  cursor: pointer;
 }
 
 .foot-center .player-top i.far {
@@ -445,6 +499,12 @@
   margin-left: 15px;
   margin-right: 15px;
   color: #fff;
+  cursor: pointer;
+}
+
+.foot-center .player-top i.far:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 /* Player BOTTOM */
